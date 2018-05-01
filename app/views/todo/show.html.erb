@@ -1,12 +1,12 @@
-<h1>Workshop Todo List </h1>
+<h1>Expense Tracker</h1>
 
-<h3>Todo #<%= params[:id] %></h3>
+<h3>Expense #<%= params[:id] %></h3>
   
 <div class="card">
  
 <div id="nogap"><input type="checkbox" name=""/></div> <h2><%= @todo.description %></h2>
  
-<span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo.pomodoro_estimate %> Pomodoros</span>
+<span class="pomodoro-estimate large-pomodoro-estimate">Cost: $<%= @todo.pomodoro_estimate %></span>
  <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button" "button">Edit</a>
  <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button" "button">Delete</a>
  <a href="/" class="simple-link">Go back...</a>

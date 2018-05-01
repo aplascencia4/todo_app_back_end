@@ -10,7 +10,7 @@ li{
   background-color: #ffffff;
   
   /*Added*/
-  border: solid 2px #4466ce;
+  border: solid 2px #c4b52f;
   border-radius: 20px;
   /*End of Additions*/
   
@@ -18,17 +18,17 @@ li{
 }
 
 li:hover{
-  background-color: #E1F5FE;
+  background-color: #C4B52F;
 }
 
 span{
   padding-left: 5px;
-  color: #4466ce;
+  color: #51B363;
   font-weight: bold;
 }
 
 div span{
-  border: solid 2px #4466ce;
+  border: solid 2px #c4b52f;
   border-radius: 20px;
   
   background-color: #ffffff;
@@ -44,15 +44,14 @@ h1{
 }
 
 h2{
-  
   background-color: #ffffff;
-  border: solid 2px #4466ce;
+  border: solid 2px #c4b52f;
   border-radius: 20px;
   padding-left: 5px;
 }
 
 body{
-  background-color: #44c475;
+  background-color: #8e6645;
   font-family: 'Lato', sans-serif;
 }
 
@@ -62,25 +61,22 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  color: #44C475;
-}
-
 .button{
+  font-size: 15px;
   color: #ffffff; 
   padding-left: 5px;
-  border: solid 2px #4466ce;
+  border: solid 2px #44C475;
   border-radius: 20px;
   font-family: 'Lato', sans-serif;
   
-  background-color: #4466ce;
+  background-color: #44C475;
   margin-top: 10px;
   margin-right: 5px;
   padding-right: 4px;
 }
 
 .button:hover{
-  background-color: #3D5089;
+  background-color: #359157;
 }
 
 #nogap{
@@ -89,25 +85,31 @@ a:hover{
   margin-top: 5px;
   margin-left: 5px;
   
-  border: solid 2px #4466ce;
+  border: solid 2px #44C475;
   border-radius: 20px;
-  background-color: #4466ce;
+  background-color: #44C475;
+}
+
+#fly {
+  float: left;
 }
 
 .simple-link{
+  font-size: 15px;
   color: #ffffff; 
   padding-left: 5px;
-  border: solid 2px #4466ce;
+  border: solid 2px #44C475;
   border-radius: 20px;
+  float: inherit;
   
-  background-color: #4466ce;
+  background-color: #44C475;
   margin-top: 10px;
   margin-right: 5px;
   padding-right: 4px;
 }
 
 .simple-link:hover{
-  background-color: #3D5089;
+  background-color: #359157;
 }
 
 /* End of New Tags */
@@ -123,37 +125,40 @@ a:hover{
 }
 
 #add-new-todo-button:hover{
-  background-color: #3D5089;
+  background-color: #359157;
 }
 
 #add-new-todo-button{
-  background-color: #4466ce;
-  /*margin-top: 10px;*/
+  background-color: #44C475;
   
   color: #ffffff; 
   padding-left: 5px;
-  border: solid 2px #4466ce;
+  border: solid 2px #44C475;
   border-radius: 20px;
   text-align: center;
-  display: flex;
   padding-right: 5px;
 }
 
 #help{
   background-color: #ffffff;
-  border: solid 3px #4466ce;
-  border-radius: 20px;
+  border-bottom: solid #000000 4px;
   position: fixed;
-  width: 98.7%;
+  left: 0; top: 0;
+  width: 100%;
   
   /*oh god*/
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-#fixpls{
+#help img {
+  width: 60px;
+  margin-left: 20px;
+}
+
+#addexpense{
   display: flex;
   flex-grow: 4;
   justify-content: center;

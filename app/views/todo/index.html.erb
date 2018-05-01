@@ -1,25 +1,39 @@
 <div id ="help">
   
-  <h1>Workshop Todo List</h1>
-
-  <div id = "fixpls">
-    <a href="/todo/new" class="add-new-todo-button" id="add-new-todo-button">> Add a todo <</a>
-  </div>
+  <%= image_tag "financeicon.png" %>
+  
+  <h1>Expense Tracker</h1>
 
 </div>
 
-<br><br><br><br>
+
+
+<br><br><br><br><br>
+
+
+
+<div id = "addexpense">
+    <a href="/todo/new" class="add-new-todo-button" id="add-new-todo-button">> Add an expense <</a>
+  </div>
+
+
+
+<div class="expenseContainer">
 
 <ul class="card">
 <% @todos.each do |todo| %>
   <li>
     <input type="checkbox" name=""/>
     <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
-    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
+    <span class="pomodoro-estimate small-pomodoro-estimate">$<%= todo.pomodoro_estimate %></span>
   </li>
 <% end %>
 </ul>
 
-<!--<div id="new-todo-block">-->
-<!--<a href="/todo/new" class="add-new-todo-button" id="add-new-todo-button">> Add a todo <</a>-->
-<!--</div>-->
+</div>
+
+
+
+<div id = "addexpense">
+    <a href="/todo/new" class="add-new-todo-button" id="add-new-todo-button">> Add an expense <</a>
+  </div>
