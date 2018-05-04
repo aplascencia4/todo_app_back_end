@@ -1,23 +1,24 @@
 /*Added font: font-family: 'Lato', sans-serif; */
 
-ul{
-  list-style: none;
-  font-size: 20px;
-}
 
-li{
-  margin-bottom: 10px;
-  background-color: #ffffff;
+
+.item{
+  margin: 20px;
+  background: #c4b52f;;
   
   /*Added*/
   border: solid 2px #c4b52f;
-  border-radius: 20px;
-  /*End of Additions*/
-  
+  font-size: 20px;
+  border-radius: 7px;
   padding: 5px;
+  /*Flex*/
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  /*End of Additions*/
 }
 
-li:hover{
+.item:hover{
   background-color: #C4B52F;
 }
 
@@ -25,9 +26,10 @@ span{
   padding-left: 5px;
   color: #51B363;
   font-weight: bold;
+  
 }
 
-div span{
+#divspan{
   border: solid 2px #c4b52f;
   border-radius: 20px;
   
@@ -163,6 +165,8 @@ a{
   flex-grow: 4;
   justify-content: center;
   margin: 0 auto;
+  
+  padding: 5px 0px;
 }
 
 .text-input {
@@ -170,6 +174,35 @@ a{
   padding-left: 3px;
   font-family: 'Lato', sans-serif;
   width: 175px;
+}
+
+.expenseContainer {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#expenseid {
+  color: white;
+  background: #c4b52f;
+  width: 5%;
+  text-align: center;
+  margin-right: 5px;
+}
+
+#descript {
+  width: 75%;
+  background-color: white;
+  border: 2px solid #847725;
+  border-right: 0px;
+  padding-left: 4px;
+}
+
+#cost {
+  width: 20%;
+  text-align: center;
+  background-color: white;
+  border: solid 2px #847725;
+  border-radius: 0px 5px 5px 0px;
 }
 
 /*

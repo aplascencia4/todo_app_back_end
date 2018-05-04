@@ -1,13 +1,3 @@
-<div id ="help">
-  
-  <%= image_tag "financeicon.png" %>
-  
-  <h1>Expense Tracker</h1>
-
-</div>
-
-
-
 <br><br><br><br><br>
 
 
@@ -17,21 +7,26 @@
   </div>
 
 
-
 <div class="expenseContainer">
 
-<ul class="card">
-<% @todos.each do |todo| %>
-  <li>
-    <input type="checkbox" name=""/>
-    <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a>
+ <div class="card">
+ <% @todos.each do |todo| %>
+   <div class="item">
+    
+    <div id="expenseid"><%= todo.id %></div>
+    
+    <div id="descript">
+    <a href="/todo/show/<%= todo.id %>"><%= todo.description %></a></div>
+    
+    <div id="cost">
     <span class="pomodoro-estimate small-pomodoro-estimate">$<%= todo.pomodoro_estimate %></span>
-  </li>
-<% end %>
-</ul>
+    </div>
+    
+  </div>
+ <% end %>
+ </div>
 
 </div>
-
 
 
 <div id = "addexpense">
